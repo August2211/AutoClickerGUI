@@ -1,0 +1,16 @@
+﻿<Window x:Class="AutoClickerGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoClickerGUI"
+        mc:Ignorable="d"
+        Title="Op AutoClicker 100% Not Virus Don't Sue" Height="182" Width="345">
+    <Grid Margin="0,10,10,2">
+        <TextBox HorizontalAlignment="Center" Margin="0,25,0,0" TextWrapping="Wrap" Text="Click Times" Name="Click_Times" VerticalAlignment="Top" Width="120" TextChanged="ClickTimes_TextChanged"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,59,0,0" TextWrapping="Wrap" Text="Delay" Name="Delay" VerticalAlignment="Top" Width="120" TextChanged="Delay_TextChanged"/>
+        <Button Content="Toggle AutoClicker" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Click Times"/><Run Language="da-dk" Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="da-dk" Text="Delay:"/></TextBlock>
+    </Grid>
+</Window>
