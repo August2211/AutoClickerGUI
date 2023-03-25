@@ -25,6 +25,8 @@ namespace AutoClickerGUI
         static extern void ClickTimes(int times, int delay);
         [DllImport("./AutoCLicker.dll")]
         static extern void initAutoClicker();
+        [DllImport("./AutoCLicker.dll")]
+        static extern void Mode();
         public MainWindow()
         {
             InitializeComponent();
@@ -34,6 +36,13 @@ namespace AutoClickerGUI
         {
             initAutoClicker();
         }
+
+        private void Mode_Click(object sender, RoutedEventArgs e)
+        {
+            Mode();
+        }
+
+
 
         private void ClickTimes_TextChanged(object sender, TextChangedEventArgs e)
         {
